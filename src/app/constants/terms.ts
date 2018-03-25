@@ -1,8 +1,6 @@
-import { Term } from '../models/term';
+import { Terms } from '../models/term';
 
-export const TERMS: {
-  [word: string]: Term;
-} = {
+export const TERMS: Terms = {
   'stance-theory': {
     word: 'Stance Theory',
     definition: ''
