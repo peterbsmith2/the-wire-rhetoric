@@ -1,3 +1,7 @@
 <p>
-  episode works!
+  {{ episode.title }}
 </p>
+
+<div *ngFor="let scene of episode.scenes; let i = index;">
+  <wire-scene [scene]="scene" [number]="i+1"></wire-scene>
+</div>

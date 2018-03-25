@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Scene } from '../../models/scene';
 
 @Component({
   selector: 'wire-scene',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./scene.component.css']
 })
 export class SceneComponent implements OnInit {
-
+  @Input() scene: Scene;
+  @Input() number: number;
   constructor() { }
 
   ngOnInit() {
