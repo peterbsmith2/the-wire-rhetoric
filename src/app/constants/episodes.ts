@@ -7,7 +7,7 @@ export const EPISODES: Episode[] = [
       {
         transcript: '/assets/transcripts/e01s01.md',
         video: '',
-        analysis: '',
+        analysis: '/assets/analyses/e01s01.md',
       }
     ]
   },

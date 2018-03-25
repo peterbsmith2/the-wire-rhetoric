@@ -14,12 +14,14 @@ import { EpisodeService } from './services/episode.service';
 import { TermService } from './services/term.service';
 
 import { MarkdownModule } from 'ngx-markdown';
+import { TermComponent } from './components/term/term.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EpisodeComponent,
     SceneComponent,
+    TermComponent,
   ],
   imports: [
     BrowserModule,

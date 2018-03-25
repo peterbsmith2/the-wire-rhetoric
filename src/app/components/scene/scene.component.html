@@ -1,4 +1,16 @@
-<p>
-  {{ number }}
-</p>
-<markdown [src]="scene.transcript"></markdown>
+<div *ngIf="scene.transcript">
+  <p>
+    Scene {{ number }}
+  </p>
+  <div *ngIf="scene.intro">
+    <p>
+      Intro
+    </p>
+    <markdown [src]="scene.intro"></markdown>
+  </div>
+  <markdown [src]="scene.transcript"></markdown>
+  <p>
+    Analysis
+  </p>
+  <markdown [src]="scene.analysis"></markdown>
+</div>

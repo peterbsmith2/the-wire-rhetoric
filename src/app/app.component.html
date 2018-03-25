@@ -1,3 +1,4 @@
+<wire-term [term]="term$ | async"></wire-term>
 <div *ngFor="let episode of episodes$ | async">
   <wire-episode [episode]="episode"></wire-episode>
 </div>
