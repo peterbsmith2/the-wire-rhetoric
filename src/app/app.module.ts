@@ -13,15 +13,18 @@ import { SceneComponent } from './components/scene/scene.component';
 import { EpisodeService } from './services/episode.service';
 import { TermService } from './services/term.service';
 
+import { MarkdownModule } from 'ngx-markdown';
+
 @NgModule({
   declarations: [
     AppComponent,
     EpisodeComponent,
-    SceneComponent
+    SceneComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MarkdownModule.forRoot(),
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [EpisodeService, TermService],

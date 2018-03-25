@@ -5,7 +5,7 @@ export const EPISODES: Episode[] = [
     title: 'The Target',
     scenes: [
       {
-        transcript: '',
+        transcript: '/assets/transcripts/e01s01.md',
         video: '',
         analysis: '',
       }
