@@ -27,7 +27,7 @@ import { TermComponent } from './components/term/term.component';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     MarkdownModule.forRoot(),
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
+    // ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [EpisodeService, TermService],
   bootstrap: [AppComponent]
