@@ -8,7 +8,7 @@ export const EPISODES: Episode[] = [
     scenes: [
       {
         transcript: T_E01_S01,
-        video: '',
+        video: 'JZWNjRlnqb4',
         analysis: A_E01_S01,
       }
     ]
