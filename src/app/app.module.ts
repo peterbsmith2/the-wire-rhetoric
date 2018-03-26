@@ -16,6 +16,8 @@ import { TermService } from './services/term.service';
 import { MarkdownModule } from 'ngx-markdown';
 import { TermComponent } from './components/term/term.component';
 
+import { EmbedVideoService } from 'ngx-embed-video';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,7 @@ import { TermComponent } from './components/term/term.component';
     MarkdownModule.forRoot(),
     // ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [EpisodeService, TermService],
+  providers: [EpisodeService, TermService, EmbedVideoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Scene } from '../../models/scene';
+import { EmbedVideoService } from 'ngx-embed-video';
 
 @Component({
   selector: 'wire-scene',
@@ -9,7 +10,22 @@ import { Scene } from '../../models/scene';
 export class SceneComponent implements OnInit {
   @Input() scene: Scene;
   @Input() number: number;
-  constructor() { }
+  public options = {
+    query: {
+      rel: 0,
+      controls: 0,
+      showinfo: 0,
+    },
+    attr: {
+      frameborder: '0',
+      width: 535,
+      height: 400
+    }
+  };
+
+  constructor(
+    public embed: EmbedVideoService
+  ) { }
 
   ngOnInit() {
   }
