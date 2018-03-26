@@ -1,13 +1,15 @@
 import { Episode } from '../models/episode';
+import { T_E01_S01 } from './transcripts/e01s01';
+import { A_E01_S01 } from './analyses/e01s01';
 
 export const EPISODES: Episode[] = [
   {
     title: 'The Target',
     scenes: [
       {
-        transcript: 'http://localhost:4201/assets/transcripts/e01s01.md',
+        transcript: T_E01_S01,
         video: '',
-        analysis: 'http://localhost:4201/assets/analyses/e01s01.md',
+        analysis: A_E01_S01,
       }
     ]
   },

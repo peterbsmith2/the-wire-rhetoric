@@ -1,3 +1,6 @@
+// tslint:disable:no-trailing-whitespace
+
+export const T_E01_S01 = `
 **Lt. Daniels**    
 For now, we'll work out of Narcotics,  
 with Kima keeping the file.  
@@ -126,3 +129,4 @@ without me knowing about it first.
 Chain-of-command, Detective.  
 That's how we do things  
 down this end of the hall.  
+`;
